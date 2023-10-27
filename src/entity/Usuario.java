@@ -7,6 +7,15 @@ public class Usuario {
     private String login;
     private String senha;
     private String email;
+    private String telefone;
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
 
     public int getCodigo() {
         return codigo;

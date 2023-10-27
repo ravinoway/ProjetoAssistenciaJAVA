@@ -13,7 +13,7 @@ public class UsuarioDAO {
      */
     public void cadastrarUsuario(Usuario Usuario){
 
-        String sql = "INSERT INTO USUARIO (NOME, LOGIN, SENHA, EMAIL) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO USUARIO (NOME, LOGIN, SENHA, EMAIL, TELEFONE) VALUES (?, ?, ?, ?, ?)";
 
         PreparedStatement ps = null;
 
@@ -23,6 +23,7 @@ public class UsuarioDAO {
             ps.setString(2, Usuario.getLogin());
             ps.setString(3, Usuario.getSenha());
             ps.setString(4, Usuario.getEmail());
+           ps.setString(5, Usuario.getTelefone());
 
             ps.execute();
             ps.close();

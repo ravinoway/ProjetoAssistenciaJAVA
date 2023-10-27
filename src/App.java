@@ -5,10 +5,10 @@ public class App {
     public static void main(String[] args) throws Exception {
         
         Usuario u = new Usuario();
-        u.setNome("Bryan");
-        u.setLogin("bryan");
-        u.setSenha("1234");
-        u.setEmail("bryan@gmail.com");
+        u.setNome("Lucas");
+        u.setLogin("lucas");
+        u.setSenha("12345");
+        u.setEmail("lucas@gmail.com");
 
         new UsuarioDAO().cadastrarUsuario(u);
     }
